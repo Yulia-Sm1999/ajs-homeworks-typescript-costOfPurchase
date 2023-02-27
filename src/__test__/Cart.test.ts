@@ -21,9 +21,9 @@ test('should show movie from Cart', () => {
 test('should show totalCost without discount', () => {
   const cart = new Cart();
   cart.add(new Movie(1005, 'Мстители', 2012, 'США', '"Avengers Assemble!"', ['фантастика','боевик', 'фэнтези', 'приключения'], '137 мин. / 2:17', 450));
-  cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
+  cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2500, 1225));
   cart.add(new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900));
-  expect(cart.getTotalCost()).toBe(3350);
+  expect(cart.getTotalCost()).toBe(3850);
 });
 
 test('should show totalCost with discount', () => {
